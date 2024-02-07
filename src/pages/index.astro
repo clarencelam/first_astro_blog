@@ -1,7 +1,6 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
-console.log("This runs in your terminal, not the browser!");
+import '../styles/global.css';
+const pagetitle = "Homepage";
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
@@ -12,14 +11,14 @@ console.log("This runs in your terminal, not the browser!");
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>Gunna Wunna</title>
+        <title>{pagetitle}</title>
     </head>
     <body>
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
 
-        <h1>Astro boy</h1>
+        <h1>{pagetitle}</h1>
     </body>
 </html>
 
