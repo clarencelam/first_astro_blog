@@ -1,6 +1,9 @@
 ---
 import '../styles/global.css';
 const pageTitle = "My Learning Blog";
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro';
+
 ---
 
 <html lang="en">
@@ -12,9 +15,7 @@ const pageTitle = "My Learning Blog";
         <title>{pageTitle}</title>
     </head>
     <body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+        <Header/>
 
         <h1>{pageTitle}</h1>
         <h2>... coming soon!</h2>
@@ -26,7 +27,8 @@ I'll put blog content here soon!
             <li><a href="/posts/post-2/">Post 2</a></li>
             <li><a href="/posts/post-3/">Post 3</a></li>
 
-          </ul>      
+          </ul>    
+          <Footer />  
     </body>
 </html>
 

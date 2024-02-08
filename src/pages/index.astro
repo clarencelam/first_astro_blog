@@ -1,6 +1,9 @@
 ---
 import '../styles/global.css';
 const pagetitle = "Homepage";
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro';
+
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
@@ -14,11 +17,11 @@ const pagetitle = "Homepage";
         <title>{pagetitle}</title>
     </head>
     <body>
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+        <Header/>
 
         <h1>{pagetitle}</h1>
+
+        <Footer />
     </body>
 </html>
 
