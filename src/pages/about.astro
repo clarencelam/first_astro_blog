@@ -21,7 +21,6 @@ const skills = [
     "Astro",
     "Selenium & Appium test automation",
 ];
-const happy = true;
 const finished = false;
 const goal = 3;
 
@@ -53,8 +52,9 @@ const fontWeight = "bold";
         <h2>... and my new Astro site!</h2>
 
         <p>
-            I am working through Astro's introductory tutorial. This is the
-            second page on my website, and it's the first one I built myself!
+            I am working through Astro's introductory tutorial. 
+            It's the frontend framework I chose for my new blog.
+        
         </p>
 
         <p>
@@ -83,8 +83,6 @@ const fontWeight = "bold";
         <ul>
             {skills.map((skill) => <li class="skill">{skill}</li>)}
         </ul>
-
-        {happy && <p>I am happy to be learning Astro!</p>}
 
         {finished && <p>I finished this tutorial!</p>}
 
