@@ -14,6 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "astro": "^4.3.3"
+    "@astrojs/preact": "^3.1.0",
+    "@astrojs/rss": "^4.0.5",
+    "astro": "^4.3.3",
+    "preact": "^10.19.5"
   }
 }
